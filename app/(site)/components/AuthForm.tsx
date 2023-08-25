@@ -21,13 +21,13 @@ const AuthForm = () => {
 	const [variant, setVariant] = useState<Variant>('LOGIN');
 	const [isLoading, setIsLoading] = useState(false);
 
-	// 	const session = useSession();
+	const session = useSession();
 
 	const router = useRouter();
 
-	// 	useEffect(() => {
-	// 		if (session?.status === 'authenticated') router.push('/users');
-	// 	}, [session?.status, router]);
+	useEffect(() => {
+		if (session?.status === 'authenticated') router.push('/users');
+	}, [session?.status, router]);
 
 	const toggleVariant = useCallback(() => {
 		variant === 'LOGIN' ? setVariant('REGISTER') : setVariant('LOGIN');
@@ -67,7 +67,7 @@ const AuthForm = () => {
 					}
 
 					if (callback?.ok && !callback?.error) {
-						toast.success('Successfully Logged In!');
+						toast.success('Successfully logged In!');
 						router.push('/users');
 					}
 				})
