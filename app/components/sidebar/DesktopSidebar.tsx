@@ -8,7 +8,7 @@ import { User } from '@prisma/client';
 import DesktopItem from './DesktopItem';
 import Image from 'next/image';
 import Avatar from '../Avatar';
-// import SettingsModal from './SettingsModal';
+import SettingsModal from './SettingsModal';
 
 interface DesktopSidebarProps {
 	currentUser: User;
@@ -21,11 +21,11 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({ currentUser }) => {
 
 	return (
 		<>
-			{/* <SettingsModal
+			<SettingsModal
 				currentUser={currentUser}
 				isOpen={isOpen}
 				onClose={() => setIsOpen(false)}
-			/> */}
+			/>
 			<div className="hidden justify-between lg:w-20 lg:flex lg:flex-col lg:fixed lg:left-0 lg:pb-4 lg:inset-y-0 lg:border-r-[1px] lg:bg-[#5e367d] lg:shadow-lg lg:overflow-y-auto lg:z-40 xl:px-6">
 				<nav className="flex flex-col justify-between mt-4">
 					<Image
