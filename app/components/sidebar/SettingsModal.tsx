@@ -1,9 +1,7 @@
 'use client';
 
 import { FC, useState } from 'react';
-
 import { useRouter } from 'next/navigation';
-
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 
 import { User } from '@prisma/client';
@@ -13,9 +11,9 @@ import { toast } from 'react-hot-toast';
 import Image from 'next/image';
 import { CldUploadButton } from 'next-cloudinary';
 
-import Modal from '../Modal';
-import Input from '../inputs/Input';
-import Button from '../Button';
+import Modal from '@/app/components/Modal';
+import Input from '@/app/components/inputs/Input';
+import Button from '@/app/components/Button';
 
 interface SettingsModalProps {
 	currentUser: User;
