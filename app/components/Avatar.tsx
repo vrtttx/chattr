@@ -21,7 +21,7 @@ const Avatar: FC<AvatarProps> = ({ user }) => {
 		<div className="relative">
 			<div className="w-9 h-9 inline-block relative rounded-full overflow-hidden md:w-11 md:h-11">
 				<Image
-					src={user?.image || '/images/placeholder.jpg'}
+					src={user?.image || '/assets/images/placeholder.jpg'}
 					alt="Avatar"
 					fill
 				/>
