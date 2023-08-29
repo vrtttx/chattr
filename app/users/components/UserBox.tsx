@@ -8,7 +8,7 @@ import { User } from '@prisma/client';
 import axios from 'axios';
 
 import Avatar from '@/app/components/Avatar';
-// import LoadingModal from '@/app/components/LoadingModal';
+import LoadingModal from '@/app/components/LoadingModal';
 
 interface UserBoxProps {
 	data: User;
@@ -32,7 +32,7 @@ const UserBox: FC<UserBoxProps> = ({ data }) => {
 
 	return (
 		<>
-			{/* {isLoading && <LoadingModal />} */}
+			{isLoading && <LoadingModal />}
 			<div
 				className="w-full flex items-center space-x-3 relative p-3 rounded-lg bg-[#f8eeff] cursor-pointer transition hover:bg-[#f2daff]"
 				onClick={handleClick}
