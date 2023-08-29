@@ -1,7 +1,7 @@
 import getUsers from '@/app/actions/getUsers';
 
 import Sidebar from '@/app/components/sidebar/Sidebar';
-// import UserList from '@/app/components/UserList';
+import UserList from '@/app/users/components/UserList';
 
 export default async function UsersLayout({
 	children,
@@ -13,7 +13,7 @@ export default async function UsersLayout({
 	return (
 		<Sidebar>
 			<div className="h-full">
-				{/* <UserList items={users} /> */}
+				<UserList items={users} />
 				{children}
 			</div>
 		</Sidebar>
