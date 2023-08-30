@@ -18,7 +18,7 @@ const Avatar: FC<AvatarProps> = ({ user }) => {
 	const isActive = members.indexOf(user?.email!) !== -1;
 
 	return (
-		<div className="relative">
+		<div className="flex items-center justify-center relative">
 			<div className="w-9 h-9 inline-block relative rounded-full overflow-hidden md:w-11 md:h-11">
 				<Image
 					src={user?.image || '/assets/images/placeholder.jpg'}
