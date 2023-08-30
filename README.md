@@ -8,7 +8,7 @@
 
 Chattr is a real-time communication web application, designed to streamline and simplify the way people connect and interact online. With its intuitive interface and seamless functionality, Chattr empowers users to engage in instant conversations effortlessly.
 
-Visit the [live demo](https://github.com/vrtttx/chattr) to experience Chattr in action.
+Visit the [live demo](https://chattr-gold.vercel.app/) to experience Chattr in action.
 
 ### Table of Contents
 
