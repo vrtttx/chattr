@@ -38,7 +38,7 @@ Visit the [live demo](https://chattr-gold.vercel.app/) to experience Chattr in a
 
 ### Getting Started
 
-Follow these steps to get DevJobs up and running on your local machine:
+Follow these steps to get Chattr up and running on your local machine:
 
 1. Clone this repository:
 
@@ -64,7 +64,7 @@ Follow these steps to get DevJobs up and running on your local machine:
    yarn dev
    ```
 
-4. Open your browser and navigate to http://localhost:3000 to see DevJobs in action.
+4. Open your browser and navigate to http://localhost:3000 to see Chattr in action.
 
 ### Usage
 
